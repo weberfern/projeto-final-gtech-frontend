@@ -1,0 +1,19 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './layouts/Layout';
+import HomePage from './pages/HomePage';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <Layout>
+            <HomePage />
+          </Layout>
+        } />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;

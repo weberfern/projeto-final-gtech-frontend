@@ -1,0 +1,124 @@
+/* -- HEADER -- */
+
+.header-container {
+    background-color: var(--white);
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* -- BARRA DE PESQUISA -- */
+.search-container {
+    flex: 1;
+    max-width: 600px;
+    /* Limita a largura para não ficar gigante */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 16px 24px;
+    background-color: var(--light-gray-3);
+    /* Cor de fundo */
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--dark-gray-3);
+    outline: none;
+}
+
+.search-container button {
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-container button svg {
+    display: block;
+}
+
+/* -- CADASTRO/LOGIN -- */
+.actions-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.register-link {
+    font-size: 16px;
+    color: var(--dark-gray-2);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.login-button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 40px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: var(--tertiary);
+}
+
+/* -- CARRINHO -- */
+.cart-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    /* Ajuste fino conforme o ícone */
+    background-color: var(--error);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- MENU DE NAVEGAÇÃO -- */
+.nav-container ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-container a {
+    font-size: 16px;
+    color: var(--dark-gray-2);
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.nav-container a.active,
+.nav-container a:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    font-weight: 700;
+}
