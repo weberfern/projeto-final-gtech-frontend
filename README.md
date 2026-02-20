@@ -3,6 +3,13 @@
 Este projeto foi desenvolvido como parte do **Bootcamp Geração Tech 3.0** da Digital College.
 Trata-se de um e-commerce de moda e calçados, focado em uma experiência de usuário moderna e responsiva.
 
+## 📸 Demonstração
+
+![Preview da HomePage](src/assets/template-for-preview.png)
+![Preview da HomePage](src/assets/template-for-preview-2.png)
+![Preview da HomePage](src/assets/template-for-preview-3.png)
+![Preview da HomePage](src/assets/template-for-preview-4.png)
+
 ## 👥 Autor
 **WeberFern**
 - GitHub: [weberfern](https://github.com/weberfern)
@@ -41,13 +48,6 @@ npm run dev
   - Seção de Oferta Especial.
 - **Componentes Reutilizáveis**: Header, Footer, Gallery, ProductCard, Section, etc.
 - **Responsividade**: Layout adaptável para mobile e desktop.
-
-## 📸 Demonstração
-
-![Preview da HomePage](src/assets/template-for-preview.png)
-![Preview da HomePage](src/assets/template-for-preview-2.png)
-![Preview da HomePage](src/assets/template-for-preview-3.png)
-![Preview da HomePage](src/assets/template-for-preview-4.png)
 
 ---
 Desenvolvido por WeberFern durante o Bootcamp Geração Tech 3.0.
