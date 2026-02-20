@@ -18,7 +18,7 @@ Trata-se de um e-commerce de moda e calçados, focado em uma experiência de usu
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/weberfern/Projeto-Final-GTech.git
+git clone https://github.com/weberfern/projeto-final-gtech-frontend.git
 ```
 
 2. Instale as dependências:
@@ -41,6 +41,13 @@ npm run dev
   - Seção de Oferta Especial.
 - **Componentes Reutilizáveis**: Header, Footer, Gallery, ProductCard, Section, etc.
 - **Responsividade**: Layout adaptável para mobile e desktop.
+
+## 📸 Demonstração
+
+![Preview da HomePage](src/assets/template-for-preview.png)
+![Preview da HomePage](src/assets/template-for-preview-2.png)
+![Preview da HomePage](src/assets/template-for-preview-3.png)
+![Preview da HomePage](src/assets/template-for-preview-4.png)
 
 ---
 Desenvolvido por WeberFern durante o Bootcamp Geração Tech 3.0.
