@@ -6,13 +6,15 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 192px;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 34px;
+    margin-top: 34px;
 }
 
 /* -- BARRA DE PESQUISA -- */
@@ -51,6 +53,13 @@
     display: block;
 }
 
+/* -- HEADER CONTROL (AREA DE LOGIN E CARRINHO) -- */
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 /* -- CADASTRO/LOGIN -- */
 .actions-container {
     display: flex;
@@ -61,8 +70,13 @@
 .register-link {
     font-size: 16px;
     color: var(--dark-gray-2);
-    text-decoration: underline;
     text-underline-offset: 4px;
+    transition: color 0.3s;
+    text-decoration: underline;
+}
+
+.register-link:hover {
+    color: var(--dark-gray);
 }
 
 .login-button {

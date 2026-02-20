@@ -1,0 +1,80 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 292px;
+    cursor: pointer;
+}
+
+.card-image {
+    width: 100%;
+    height: 321px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+.card-image img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s;
+}
+
+.product-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.discount-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #E7FF86;
+    /* Cor do destaque */
+    color: var(--dark-gray-2);
+    padding: 5px 15px;
+    border-radius: 29px;
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-category {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--light-gray);
+}
+
+.card-name {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--dark-gray-2);
+    line-height: 38px;
+}
+
+.card-prices {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price-original {
+    font-size: 24px;
+    color: var(--light-gray);
+    text-decoration: line-through;
+}
+
+.price-discount {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-gray);
+}

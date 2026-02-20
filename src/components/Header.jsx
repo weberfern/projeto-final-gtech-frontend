@@ -1,9 +1,21 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import Logo from './Logo';
 import miniCart from '../assets/mini-cart.svg';
-import './Header.css';
+import './styles/Header.css';
 
 const Header = () => {
+
+    const [searchTerm, setSearchTerm] = useState('');
+    const navigate = useNavigate();
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        if (searchTerm.trim()) {
+            navigate(`/products?filter=${searchTerm}`)
+        }
+    };
+
     return (
         <header className='header-container'>
             <div className='header-content'>
@@ -11,8 +23,8 @@ const Header = () => {
                 <Logo variant='header' />
 
                 {/* BARRA DE PESQUISA */}
-                <div className='search-container'>
-                    <input type="text" placeholder='Pesquisar produto...' />
+                <form className='search-container' onSubmit={handleSearch}>
+                    <input type="text" placeholder='Pesquisar produto...' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                     <button>
                         <svg
                             width="24"
@@ -39,18 +51,21 @@ const Header = () => {
                             />
                         </svg>
                     </button>
-                </div>
+                </form>
 
-                {/* ÁREA DE CADASTRO/ENTRAR */}
-                <div className='actions-container'>
-                    <a href="/register" className='register-link'>Cadastre-se</a>
-                    <a href="/login" className='login-button'>Entrar</a>
-                </div>
+                {/* NA MSM DIV CADASTRO/ENTRAR E CARRINHO PARA CONTROLA O ESPAÇAMENTO */}
+                <div className='header-controls'>
+                    {/* ÁREA DE CADASTRO/ENTRAR */}
+                    <div className='actions-container'>
+                        <a href="/register" className='register-link'>Cadastre-se</a>
+                        <a href="/login" className='login-button'>Entrar</a>
+                    </div>
 
-                {/* CARRINHO */}
-                <div className='cart-container'>
-                    <img src={miniCart} alt="Carrinho" />
-                    <span className='cart-count'>2</span> {/* CONTADOR A IMPLEMENTAR POSTERIORMENTE */}
+                    {/* CARRINHO */}
+                    <div className='cart-container'>
+                        <img src={miniCart} alt="Carrinho" />
+                        <span className='cart-count'>2</span> {/* CONTADOR A IMPLEMENTAR POSTERIORMENTE */}
+                    </div>
                 </div>
             </div>
 

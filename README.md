@@ -1,16 +1,46 @@
-# React + Vite
+# Projeto Drip Store - Frontend 👟👕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como parte do **Bootcamp Geração Tech 3.0** da Digital College.
+Trata-se de um e-commerce de moda e calçados, focado em uma experiência de usuário moderna e responsiva.
 
-Currently, two official plugins are available:
+## 👥 Autor
+**Weber Fern**
+- GitHub: [weberfern](https://github.com/weberfern)
+- Email: weber12@gmail.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
+- **React**: Biblioteca JavaScript para construção de interfaces.
+- **Vite**: Ferramenta de build rápida e otimizada.
+- **React Router**: Gerenciamento de rotas e navegação.
+- **CSS3**: Estilização com variáveis e flexbox/grid.
 
-## React Compiler
+## 📦 Como Rodar o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone o repositório:
+```bash
+git clone https://github.com/weberfern/Projeto-Final-GTech.git
+```
 
-## Expanding the ESLint configuration
+2. Instale as dependências:
+```bash
+cd Projeto-Final-GTech
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Rode o projeto:
+```bash
+npm run dev
+```
+
+## 🎨 Funcionalidades
+- **Home Page**:
+  - Carrossel de destaques (Hero Slide).
+  - Coleções em destaque.
+  - Ícones de categorias.
+  - Listagem de produtos em alta.
+  - Seção de Oferta Especial.
+- **Componentes Reutilizáveis**: Header, Footer, Gallery, ProductCard, Section, etc.
+- **Responsividade**: Layout adaptável para mobile e desktop.
+
+---
+Desenvolvido com 💜 por Weber Fern durante o Bootcamp Geração Tech 3.0.

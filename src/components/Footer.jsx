@@ -2,7 +2,8 @@ import Logo from './Logo';
 import facebookIcon from '../assets/facebook.svg';
 import instagramIcon from '../assets/instagram.svg';
 import twitterIcon from '../assets/twitter.svg';
-import './Footer.css';
+import FooterInformation from './FooterInformation';
+import './styles/Footer.css';
 
 const Footer = () => {
 
@@ -24,41 +25,47 @@ const Footer = () => {
                         <a href="#"><img src={twitterIcon} alt="Twitter" /></a>
                     </div>
                 </div>
+                <div className='footer-links-container'>
+                    {/* INFORMAÇÕES */}
+                    <div className="footer-column">
+                        <FooterInformation
+                            title="Informação"
+                            informations={[
+                                { text: "Sobre Drip Store", link: "/about" },
+                                { text: "Segurança", link: "/security" },
+                                { text: "Wishlist", link: "/wishlist" },
+                                { text: "Blog", link: "/blog" },
+                                { text: "Trabalhe conosco", link: "/work" },
+                                { text: "Meus Pedidos", link: "/orders" },
+                            ]}
+                        />
+                    </div>
 
-                {/* INFORMAÇÕES */}
-                <div className="footer-column">
-                    <h3>Informação</h3>
-                    <ul>
-                        <li><a href="/about">Sobre Drip Store</a></li>
-                        <li><a href="/security">Segurança</a></li>
-                        <li><a href="/wishlist">Wishlist</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/work">Trabalhe conosco</a></li>
-                        <li><a href="/orders">Meus Pedidos</a></li>
-                    </ul>
-                </div>
+                    {/* CATEGORIAS */}
+                    <div className="footer-column">
+                        <FooterInformation
+                            title="Categorias"
+                            informations={[
+                                { text: "Camisetas", link: "/category/shirts" },
+                                { text: "Calças", link: "/category/pants" },
+                                { text: "Bonés", link: "/category/caps" },
+                                { text: "Headphones", link: "/category/headphones" },
+                                { text: "Tênis", link: "/category/shoes" },
+                            ]}
+                        />
+                    </div>
 
-                {/* CATEGORIAS */}
-                <div className="footer-column">
-                    <h3>Categorias</h3>
-                    <ul>
-                        <li><a href="/category/shirts">Camisetas</a></li>
-                        <li><a href="/category/pants">Calças</a></li>
-                        <li><a href="/category/caps">Bonés</a></li>
-                        <li><a href="/category/headphones">Headphones</a></li>
-                        <li><a href="/category/shoes">Tênis</a></li>
-                    </ul>
-                </div>
-
-                {/* CONTATO */}
-                <div className="footer-column">
-                    <h3>Contato</h3>
-                    <p>
-                        Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161
-                    </p>
-                    <p>(85) 3051-3411</p>
+                    {/* CONTATO */}
+                    <div className="footer-column">
+                        <h3>Contato</h3>
+                        <p>
+                            Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161
+                        </p>
+                        <p>(85) 3051-3411</p>
+                    </div>
                 </div>
             </div>
+
 
             {/* COPYRIGHT */}
             <hr className="footer-divider" />

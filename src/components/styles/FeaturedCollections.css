@@ -1,0 +1,109 @@
+.featured-collections-container {
+    padding: 60px 100px;
+    background-color: var(--light-gray-3);
+    /* Mesmo fundo da seção geral */
+    display: flex;
+    /* Para alinhar e centralizar */
+    flex-direction: column;
+    align-items: center;
+}
+
+.collections-title {
+    width: 100%;
+    max-width: 1240px;
+    /* Alinha com o resto do site */
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-gray-2);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.collections-grid {
+    display: flex;
+    gap: 24px;
+    /* Espaço entre os cards */
+    width: 100%;
+    max-width: 1240px;
+    justify-content: space-between;
+}
+
+.collection-card {
+    flex: 1;
+    height: 250px;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    background-color: #D8E3F2;
+    /* Cor azulada clara de exemplo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Conteúdo alinhado embaixo/esquerda */
+    align-items: flex-start;
+    gap: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.collection-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Exemplo de imagens de fundo diferentes para cada card */
+.card-1 {
+    background-image: url('https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/collection-1.png');
+}
+
+.card-2 {
+    background-image: url('https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/collection-2.png');
+}
+
+.card-3 {
+    background-image: url('https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/collection-3.png');
+}
+
+.discount-pill {
+    background-color: #E7FF86;
+    padding: 5px 15px;
+    border-radius: 29px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark-gray-2);
+}
+
+.collection-card button {
+    background-color: var(--light-gray-3);
+    color: var(--primary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    align-self: flex-start;
+}
+
+.collection-card button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .featured-collections-container {
+        padding: 40px 20px;
+    }
+
+    .collections-grid {
+        flex-direction: column;
+    }
+
+    .collection-card {
+        height: 200px;
+    }
+}
