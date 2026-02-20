@@ -4,7 +4,7 @@ Este projeto foi desenvolvido como parte do **Bootcamp Geração Tech 3.0** da D
 Trata-se de um e-commerce de moda e calçados, focado em uma experiência de usuário moderna e responsiva.
 
 ## 👥 Autor
-**Weber Fern**
+**WeberFern**
 - GitHub: [weberfern](https://github.com/weberfern)
 - Email: weber12@gmail.com
 
@@ -43,4 +43,4 @@ npm run dev
 - **Responsividade**: Layout adaptável para mobile e desktop.
 
 ---
-Desenvolvido com 💜 por Weber Fern durante o Bootcamp Geração Tech 3.0.
+Desenvolvido por WeberFern durante o Bootcamp Geração Tech 3.0.
