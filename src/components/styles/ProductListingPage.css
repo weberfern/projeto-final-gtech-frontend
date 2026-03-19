@@ -5,6 +5,26 @@
     background-color: #F9F8FE;
 }
 
+.product-listing-header {
+    display: flex;
+    justify-content: space-between;
+    /* Joga Título pra ESQUERDA e Caixa pra DIREITA */
+    align-items: center;
+    margin-bottom: 10px;
+    /* Separa o cabeçalho das colunas abaixo */
+}
+
+.product-listing-title {
+    font-size: 16px;
+    font-weight: normal;
+    color: #474747;
+}
+
+.product-listing-title strong {
+    font-weight: bold;
+    color: #474747;
+}
+
 .product-listing-content {
     display: flex;
     gap: 30px;
@@ -47,15 +67,8 @@
     align-items: center;
     border: 1px solid #474747;
     border-radius: 4px;
-    padding: 5px 15px;
-    /* Espaçamento interno da caixinha */
+    padding: 10px 15px;
     width: max-content;
-    /* Faz a borda engolir apenas o texto, sem esticar */
-    margin-left: auto;
-    /* Empurra a caixinha toda para o lado direito */
-    margin-bottom: -50px;
-    position: relative;
-    z-index: 2;
 }
 
 .ordenar-container strong {
