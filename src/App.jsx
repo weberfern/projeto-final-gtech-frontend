@@ -13,7 +13,7 @@ function App() {
           </Layout>
         } />
 
-        <Route path="/produtos" element={<ProductListingPage />} />
+        <Route path="/products" element={<ProductListingPage />} />
       </Routes>
     </BrowserRouter>
   );
