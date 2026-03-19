@@ -22,8 +22,15 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descript
             {/* Bloco de Preço */}
             <div className="buy-box-price">
                 <span className="price-currency">R$</span>
-                <span className="price-discount">{priceDiscount}</span>
-                <span className="price-original">{price}</span>
+                {priceDiscount ? (
+                    <>
+                        <span className="price-discount">{priceDiscount}</span>
+                        <span className="price-original">{price}</span>
+                    </>
+                ) : (
+                    <span className="price-discount">{price}</span>
+                )}
+
             </div>
 
             {/* Descrição */}

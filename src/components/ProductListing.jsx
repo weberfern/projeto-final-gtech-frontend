@@ -1,12 +1,14 @@
 import ProductCard from './ProductCard';
 import './styles/ProductListing.css';
 
+
 const ProductListing = ({ products }) => {
     return (
         <div className='product-listing'>
             {products && products.map((product, index) => (
                 <ProductCard
                     key={index}
+                    id={product.id}
                     image={product.image}
                     name={product.name}
                     category={product.category}

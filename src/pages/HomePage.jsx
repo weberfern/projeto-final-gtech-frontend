@@ -11,6 +11,7 @@ import img03 from "../assets/produc-image-3-removebg.png";
 import img04 from "../assets/produc-image-4-removebg.png";
 import img05 from "../assets/produc-image-5-removebg.png";
 import img06 from "../assets/produc-image-6-removebg.png";
+import { mockProducts } from "../data/mockProducts";
 
 const HomePage = () => {
 
@@ -50,65 +51,7 @@ const HomePage = () => {
     ];
 
     {/* PRODUTOS EM DESTAQUE */ }
-    const products = [
-        {
-            image: img01,
-            name: "K-Swiss V8 - Masculino",
-            category: "Tênis",
-            price: 200,
-            priceDiscount: 149
-        },
-        {
-            image: img02,
-            name: "K-Swiss V8 - Masculino",
-            category: "Tênis",
-            price: 200,
-            priceDiscount: 149
-        },
-        // Adicione mais produtos duplicados para testar o grid
-        {
-            image: img03,
-            name: "K-Swiss V8 - Masculino",
-            category: "Tênis",
-            price: 200,
-            priceDiscount: 149
-        },
-        {
-            image: img04,
-            name: "K-Y V8 - Feminino",
-            category: "Tênis",
-            price: 249,
-            priceDiscount: 199
-        },
-        {
-            image: img05,
-            name: "K-Swiss V8 - Masculino",
-            category: "Tênis",
-            price: 200,
-            priceDiscount: 149
-        },
-        {
-            image: img06,
-            name: "K-Swiss V8 - Masculino",
-            category: "Tênis",
-            price: 200,
-            priceDiscount: 149
-        },
-        {
-            image: img01,
-            name: "K-Swiss V8 - Masculino",
-            category: "Tênis",
-            price: 200,
-            priceDiscount: 149
-        },
-        {
-            image: img02,
-            name: "K-Swiss V8 - Masculino",
-            category: "Tênis",
-            price: 200,
-            priceDiscount: 149
-        },
-    ];
+    const products = mockProducts.slice(0, 8);
 
     return (
         <div className="home-container">

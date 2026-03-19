@@ -2,6 +2,7 @@ import { useState } from "react";
 import arrowLeft from '../assets/arrow-left.svg';
 import arrowRight from '../assets/arrow-right.svg';
 import './styles/Gallery.css';
+import { Link } from "react-router-dom";
 
 const Gallery = ({ className = "", width = "100%", height = "auto", radius = "0px", showThumbs = false, images = [] }) => {
 
@@ -42,7 +43,9 @@ const Gallery = ({ className = "", width = "100%", height = "auto", radius = "0p
                         <span className="gallery-subtitle">{images[currentIndex].subtitle}</span>
                         <h2 className="gallery-title">{images[currentIndex].title}</h2>
                         <p className="gallery-description">{images[currentIndex].description}</p>
-                        <button className="gallery-button">{images[currentIndex].buttonText}</button>
+                        <Link to="/products">
+                            <button className="gallery-button">{images[currentIndex].buttonText}</button>
+                        </Link>
                     </div>
 
                     <div className="gallery-image">
