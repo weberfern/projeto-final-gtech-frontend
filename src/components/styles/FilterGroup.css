@@ -1,0 +1,14 @@
+.filter-group-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-group-item {
+    margin-bottom: 10px;
+}
+
+.filter-group-item label {
+    margin-left: 8px;
+    cursor: pointer;
+    color: #474747;
+}
