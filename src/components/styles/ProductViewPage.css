@@ -1,0 +1,46 @@
+.product-view-page {
+    padding: 0 20px;
+    background-color: #F9F8FE;
+}
+
+/* O "Caminho" no topo (Breadcrumb) */
+.product-breadcrumb {
+    max-width: 1240px;
+    margin: 20px auto;
+    font-size: 14px;
+    color: #474747;
+}
+
+.product-breadcrumb strong {
+    font-weight: bold;
+}
+
+/* Miolo com a Galeria e o BuyBox */
+.product-view-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1240px;
+    margin: 40px auto 100px auto;
+}
+
+.product-gallery-mock {
+    flex: 1;
+    height: 570px;
+    background-color: #E2E3FF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #474747;
+}
+
+.related-products {
+    max-width: 1240px;
+    margin: 0 auto 40px auto;
+}
+
+/* 🪄 A Mágica: Anulamos o padding gigante do Section SÓ nesta página */
+.related-products .section-container {
+    padding: 0 !important;
+    background-color: transparent !important;
+}

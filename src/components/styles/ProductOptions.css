@@ -1,0 +1,61 @@
+.product-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options-title {
+    font-size: 14px;
+    color: #8F8F8F;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.options-list {
+    display: flex;
+    gap: 10px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    color: #474747;
+    transition: all 0.2s;
+
+    /* VEM DO JAVASCRIPT: Background será da devida cor, Border pegará o radius exigido */
+    background-color: var(--dynamic-bg);
+    border-radius: var(--dynamic-radius);
+}
+
+.option-item.active {
+    border: 2px solid #C92071;
+}
+
+.shape-square {
+    width: 46px;
+    height: 46px;
+}
+
+.shape-circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 50% !important;
+    /* Força o círculo passar por cima de qualquer Custom Property */
+}
+
+/* O texto do número do tamanho (ex: "39", "40") que estava no estilo em linha */
+.option-text {
+    font-size: 24px;
+}
+
+.type-color {
+    border: none;
+}
+
+.type-color.active {
+    border: 2px solid #C92071;
+}
