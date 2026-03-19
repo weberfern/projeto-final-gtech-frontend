@@ -1,4 +1,4 @@
-import "./components/styles/ProductListingPage.css";
+import "../components/styles/ProductListingPage.css";
 import Layout from '../layouts/Layout';
 import FilterGroup from '../components/FilterGroup';
 import Section from '../components/Section';
