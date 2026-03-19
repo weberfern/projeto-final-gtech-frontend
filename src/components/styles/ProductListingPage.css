@@ -44,8 +44,15 @@
 
 .ordenar-container {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    border: 1px solid #474747;
+    border-radius: 4px;
+    padding: 5px 15px;
+    /* Espaçamento interno da caixinha */
+    width: max-content;
+    /* Faz a borda engolir apenas o texto, sem esticar */
+    margin-left: auto;
+    /* Empurra a caixinha toda para o lado direito */
     margin-bottom: -50px;
     position: relative;
     z-index: 2;
@@ -54,18 +61,17 @@
 .ordenar-container strong {
     font-size: 16px;
     color: #474747;
-    margin-right: 10px;
-    font-weight: normal;
+    margin-right: 5px;
+    font-weight: bold;
 }
 
 .sort-select {
-    padding: 10px 15px;
-    border: 1px solid #474747;
-    border-radius: 4px;
+    padding: 5px 0;
+    border: none;
     font-size: 16px;
     font-family: inherit;
-    font-weight: bold;
     color: #474747;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
 }

@@ -25,3 +25,13 @@
     display: flex;
     align-items: center;
 }
+
+.filter-group-container {
+    margin-bottom: 25px;
+}
+
+.filter-group-title {
+    font-size: 14px;
+    color: #474747;
+    margin-bottom: 15px;
+}
