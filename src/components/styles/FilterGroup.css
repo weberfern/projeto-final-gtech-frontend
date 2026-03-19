@@ -12,3 +12,16 @@
     cursor: pointer;
     color: #474747;
 }
+
+.filter-group-input {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #C92071;
+}
+
+.filter-group-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}

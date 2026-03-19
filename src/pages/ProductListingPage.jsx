@@ -24,15 +24,6 @@ const ProductListingPage = () => {
                     {/* COLUNA ESQUERDA: Filtros */}
                     <div className="product-listing-filters">
 
-                        {/* 6.1 - Ordenar por */}
-                        <div className="filter-sort-group">
-                            <h3>Ordenar por</h3>
-                            <select name="sort">
-                                <option value="lowest">Menor preço</option>
-                                <option value="highest">Maior preço</option>
-                            </select>
-                        </div>
-
                         {/* 6.2 - Filtrar por */}
                         <div className="filter-sort-group">
                             <h3>Filtrar por</h3>
@@ -80,7 +71,19 @@ const ProductListingPage = () => {
                     </div>
 
                     {/* COLUNA DIREITA: Listagem de Produtos */}
+
                     <div className="product-listing-results">
+
+                        {/* 6.1 - Ordenar por */}
+                        <div className="ordenar-container">
+                            <strong>Ordenar por</strong>
+                            <select name="sort" className="sort-select">
+                                <option value="relevantes">mais relevantes</option>
+                                <option value="lowest">menor preço</option>
+                                <option value="highest">maior preço</option>
+                            </select>
+                        </div>
+
                         {/* 6.3 - Listagem de produtos usando Section e ProductListing */}
                         <Section title="Resultados para 'Tênis - 389 produtos" titleAlign="left">
                             <ProductListing products={products} />
