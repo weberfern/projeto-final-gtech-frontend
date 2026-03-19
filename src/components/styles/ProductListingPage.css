@@ -1,8 +1,14 @@
 .product-listing-page {
     display: flex;
     flex-direction: column;
-    padding: 20px 100px;
+    padding: 30px 20px;
     background-color: #F9F8FE;
+}
+
+.product-listing-wrapper {
+    width: max-content;
+    margin: 0 auto;
+    max-width: 95vw;
 }
 
 .product-listing-header {
@@ -10,7 +16,8 @@
     justify-content: space-between;
     /* Joga Título pra ESQUERDA e Caixa pra DIREITA */
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    width: 100%;
     /* Separa o cabeçalho das colunas abaixo */
 }
 
