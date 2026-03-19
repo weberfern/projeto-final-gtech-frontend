@@ -73,7 +73,7 @@ const ProductListingPage = () => {
                             title="Estado"
                             inputType="radio"
                             options={[
-                                { text: "Novo", value: "new" },
+                                { text: "Novo", value: "new", defaultChecked: true },
                                 { text: "Usado", value: "used" },
                             ]}
                         />
