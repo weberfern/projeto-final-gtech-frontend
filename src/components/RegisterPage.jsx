@@ -27,12 +27,12 @@ const RegisterPage = () => {
                                 <input type="email" id="email" placeholder="Insira seu e-mail" />
                             </div>
                             <div className="input-group">
-                                <label htmlFor="password">Senha *</label>
-                                <input type="password" id="password" placeholder="Insira sua senha" />
-                            </div>
-                            <div className="input-group">
                                 <label htmlFor="phone">Telefone *</label>
                                 <input type="text" id="phone" placeholder="Insira seu telefone" />
+                            </div>
+                            <div className="input-group">
+                                <label htmlFor="password">Senha *</label>
+                                <input type="password" id="password" placeholder="Insira sua senha" />
                             </div>
                             <div className="input-group">
                                 <label htmlFor="confirm-password">Confirmar Senha *</label>
