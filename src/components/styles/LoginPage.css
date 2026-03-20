@@ -1,0 +1,149 @@
+.login-page {
+    /* Degrade que começa no fundo cinza e clareia para o branco */
+    background: linear-gradient(180deg, #F9F8FE 0%, #FFFFFF 100%);
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    /* Sombreamento nível "premium" bem difuso: */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+
+.login-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.login-content p {
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.login-content p a {
+    color: #474747;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #474747;
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 15px;
+    /* Cinza clarinho padrão do botão de busca */
+    background-color: #F9F8FE;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #474747;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Magia acontecendo quando o usuário clica na caixa de texto: */
+.input-group input:focus {
+    box-shadow: 0 0 0 2px #C92071;
+}
+
+.forgot-password {
+    text-align: left;
+}
+
+.forgot-password a {
+    color: #474747;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.login-btn {
+    background-color: #C92071;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background-color: #B01A60;
+    transform: translateY(-2px);
+}
+
+.login-social {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.login-social p {
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 15px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    background-color: transparent;
+    color: #474747;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-btn.google:hover {
+    border-color: #DB4437;
+    color: #DB4437;
+}
+
+.social-btn.facebook:hover {
+    border-color: #4267B2;
+    color: #4267B2;
+}
+
+/* Responsividade Básica pro Celular não explodir a tela */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+}

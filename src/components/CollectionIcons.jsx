@@ -51,7 +51,7 @@ const CollectionIcons = () => {
             <h3>Coleções em destaque</h3>
             <div className='icons-grid'>
                 {collections.map((item, index) => (
-                    <Link key={index} to={item.link} className='icon-item'>
+                    <Link key={index} to="/products" state={{ sentCategory: item.name }} className='icon-item'>
                         <div className='icon-circle'>
                             {item.icon}
                         </div>

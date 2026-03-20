@@ -18,6 +18,10 @@ const ProductListingPage = () => {
         location.state && location.state.sentCategory ? [location.state.sentCategory] : []
     );
 
+    useEffect(() => {
+        window.scrollTo(0, 0); /* Faz a página voltar para o topo quando o usuário clica em um produto */
+    }, [location]);
+
     /* Função que adiciona ou remove marcas da lista de filtros */
     const handleBrandChange = (value, isChecked) => {
         if (isChecked) {

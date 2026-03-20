@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
 import Logo from './Logo';
 import miniCart from '../assets/mini-cart.svg';
@@ -57,8 +57,8 @@ const Header = () => {
                 <div className='header-controls'>
                     {/* ÁREA DE CADASTRO/ENTRAR */}
                     <div className='actions-container'>
-                        <a href="/register" className='register-link'>Cadastre-se</a>
-                        <a href="/login" className='login-button'>Entrar</a>
+                        <Link to="/register" className='register-link'>Cadastre-se</Link>
+                        <Link to="/login" className='login-button'>Entrar</Link>
                     </div>
 
                     {/* CARRINHO */}

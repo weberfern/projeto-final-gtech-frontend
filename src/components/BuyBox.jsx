@@ -53,7 +53,7 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descript
                     title="Cor"
                     shape="circle"
                     type="color"
-                    options={['#6FEEFF', '#C92071', '#222222', '#F1F1F1']}
+                    options={['#6FEEFF', '#FF6969', '#5E5E5E', '#6D70B7']}
                 />
             </div>
 
