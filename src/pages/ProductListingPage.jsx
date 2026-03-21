@@ -19,6 +19,15 @@ const ProductListingPage = () => {
     );
     const [isFilterOpen, setIsFilterOpen] = useState(false);
 
+    /* Impede o scroll da página quando o menu de filtros está aberto */
+    useEffect(() => {
+        if (isFilterOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        };
+    }, [isFilterOpen]);
+
     useEffect(() => {
         window.scrollTo(0, 0); /* Faz a página voltar para o topo quando o usuário clica em um produto */
     }, [location]);
@@ -88,22 +97,24 @@ const ProductListingPage = () => {
                             <strong>Resultados para "Tênis"</strong> - {products.length} produtos
                         </h2>
                         {/* 6.1 - Ordenar por (agora a caixinha vive livre no header) */}
-                        <div className="ordenar-container">
-                            <strong>Ordenar por:</strong>
-                            <select name="sort" className="sort-select" onChange={(e) => setSortType(e.target.value)}>
-                                <option value="relevantes">mais relevantes</option>
-                                <option value="lowest">menor preço</option>
-                                <option value="highest">maior preço</option>
-                            </select>
+                        <div className="header-actions">
+                            <div className="ordenar-container">
+                                <strong>Ordenar por:</strong>
+                                <select name="sort" className="sort-select" onChange={(e) => setSortType(e.target.value)}>
+                                    <option value="relevantes">mais relevantes</option>
+                                    <option value="lowest">menor preço</option>
+                                    <option value="highest">maior preço</option>
+                                </select>
+                            </div>
+
+                            {/* BOTÃO DE FUNIL (MOBILE) */}
+                            <button className="mobile-filter-button" onClick={() => setIsFilterOpen(true)}>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
-
-                    {/* BOTÃO DE FUNIL (MOBILE) */}
-                    <button className="mobile-filter-button" onClick={() => setIsFilterOpen(true)}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </button>
 
                     {/* 2. O CORPO INFERIOR (Coluna ESQ + Coluna DIR) */}
                     <div className="product-listing-content">
