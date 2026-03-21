@@ -78,3 +78,41 @@
     font-weight: 700;
     color: var(--dark-gray);
 }
+
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%;
+        /* Ocupa a largura toda no mobile */
+        gap: 5px;
+        box-sizing: border-box;
+    }
+
+    .card-image {
+        height: 180px;
+        /* Altura um pouco menor no mobile */
+        box-sizing: border-box;
+    }
+
+    .card-category {
+        font-size: 10px;
+    }
+
+    .card-name {
+        font-size: 14px;
+        line-height: 20px;
+        /* Quebra a linha e coloca "..." no final se o nome for mt grande */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .price-original,
+    .price-discount {
+        font-size: 16px;
+    }
+
+}

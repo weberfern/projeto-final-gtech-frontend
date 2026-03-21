@@ -48,10 +48,18 @@
     color: var(--tertiary);
 }
 
-/* Responsividade */
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+
 @media (max-width: 768px) {
     .section-container {
         padding: 40px 20px;
+        box-sizing: border-box;
+        /* RESOLVE A TELA ESTOURADA NA DIREITA */
+        width: 100%;
+        overflow: hidden;
+        /* Corta qualquer coisa que tente esticar pra fora */
     }
 
     .section-header {

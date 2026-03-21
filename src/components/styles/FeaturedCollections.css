@@ -93,17 +93,29 @@
     color: var(--white);
 }
 
-/* Responsividade */
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+
 @media (max-width: 768px) {
     .featured-collections-container {
         padding: 40px 20px;
+        /* O REMÉDIO: Impede do container vazar as bordas do celular! */
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
     }
 
     .collections-grid {
         flex-direction: column;
+        gap: 20px;
+        /* Garante que vão ficar desgrudados verticalmente */
     }
 
     .collection-card {
-        height: 200px;
+        /* Devolvemos a altura original do PC para a imagem não ficar espremida e esticar as letras */
+        height: auto;
+        aspect-ratio: 380 / 250;
+        box-sizing: border-box;
     }
 }
