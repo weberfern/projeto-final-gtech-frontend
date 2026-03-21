@@ -17,6 +17,7 @@ const ProductListingPage = () => {
     const [selectedCategories, setSelectedCategories] = useState(
         location.state && location.state.sentCategory ? [location.state.sentCategory] : []
     );
+    const [isFilterOpen, setIsFilterOpen] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0); /* Faz a página voltar para o topo quando o usuário clica em um produto */
@@ -96,15 +97,24 @@ const ProductListingPage = () => {
                             </select>
                         </div>
                     </div>
+
+                    {/* BOTÃO DE FUNIL (MOBILE) */}
+                    <button className="mobile-filter-button" onClick={() => setIsFilterOpen(true)}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </button>
+
                     {/* 2. O CORPO INFERIOR (Coluna ESQ + Coluna DIR) */}
                     <div className="product-listing-content">
                         {/* COLUNA ESQUERDA: Filtros */}
-                        <div className="product-listing-filters">
-                            {/* 6.2 - Filtrar por */}
-                            <div className="filter-sort-group">
-                                <h3>Filtrar por</h3>
-                                <hr style={{ borderColor: "#CCCCCC", marginBottom: "15px" }} />
+                        <div className={`product-listing-filters ${isFilterOpen ? 'open' : ''}`}>
+                            <div className="filter-modal-header">
+                                <h2 style={{ fontSize: "16px" }}>Filtrar por</h2>
+                                <button className="close-filter" onClick={() => setIsFilterOpen(false)}>✕</button>
                             </div>
+                            <hr style={{ borderColor: "#CCCCCC", marginBottom: "20px" }} />
+
                             <FilterGroup
                                 title="Marca"
                                 inputType="checkbox"
@@ -139,8 +149,8 @@ const ProductListingPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </Layout>
+            </div >
+        </Layout >
     );
 };
 

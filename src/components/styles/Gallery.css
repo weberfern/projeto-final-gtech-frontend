@@ -17,6 +17,7 @@
     justify-content: center;
     padding: 0 100px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .gallery-content {
@@ -85,7 +86,7 @@
     /* Joga a imagem para direita use center se quiser*/
     align-items: center;
     position: relative;
-    /* Se quiser colocar aquela "nuvem" de pontinhos atrás, seria aqui com :before */
+    width: 50%;
 }
 
 .gallery-image img {
@@ -94,6 +95,26 @@
     object-fit: contain;
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
     border-radius: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Enfeite de bolinhas atrás do tênis no carrosel de imagens da HomePage */
+.gallery-image::after {
+    content: '';
+    position: absolute;
+    top: 78px;
+    right: -200px;
+    width: 140px;
+    height: 140px;
+    /* Tamanho das bolinhas */
+    background-image: url('../../assets/Ornament.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    /* Garante que o Enfeite fique ATRÁS do Tênis */
+    pointer-events: none;
+    /* Para o enfeite não bloquear mouses/dedos */
 }
 
 /* --- SETAS E DOTS --- */
@@ -225,6 +246,11 @@
     .gallery-image img {
         max-height: 250px;
         /* Evita que o tênis engula a tela inteira */
+    }
+
+    .gallery-image::after {
+        top: 0px;
+        right: -75px;
     }
 
     /* Remove as setas laterais para imitar apps modernos (sobram só as bolinhas) */

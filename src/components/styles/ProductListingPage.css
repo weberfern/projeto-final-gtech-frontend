@@ -96,3 +96,92 @@
     cursor: pointer;
     outline: none;
 }
+
+/* Oculta botão Mobile e cabeçalho modal por padrão enquanto no PC */
+.mobile-filter-button,
+.filter-modal-header {
+    display: none;
+}
+
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+@media (max-width: 768px) {
+    .product-listing-header {
+        flex-direction: column-reverse;
+        /* Pula os "Resultados..." para baixo do "Ordernar" */
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .header-actions {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        /* Seta o "Ordenar" na esquerda e o "Filtro" rosa na direita */
+        align-items: center;
+    }
+
+    .ordenar-container {
+        flex: 1;
+        margin-right: 15px;
+        /* Empurra do botão funil o máximo possível */
+        border-color: #CCCCCC;
+    }
+
+    /* O Botão de Filtro */
+    .mobile-filter-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary);
+        width: 48px;
+        height: 48px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    /* O Menu de Filtros sai do canto da tela e encapsula tudo flutuando */
+    .product-listing-filters {
+        position: fixed;
+        top: 90px;
+        left: -90%;
+        /* Totalmente escondido fora da tela */
+        width: 300px;
+        height: calc(100vh - 90px);
+        background-color: var(--white);
+        z-index: 1000;
+        padding: 30px;
+        box-sizing: border-box;
+        border-radius: 0;
+        overflow-y: auto;
+        transition: left 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-listing-filters.open {
+        left: 0;
+        /* Aparece na tela inteira */
+        box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    }
+
+    .filter-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .filter-modal-header h2 {
+        font-size: 20px;
+        color: var(--dark-gray-2);
+    }
+
+    .close-filter {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: var(--dark-gray-2);
+        cursor: pointer;
+    }
+}

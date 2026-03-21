@@ -157,6 +157,8 @@
         gap: 15px;
         box-sizing: border-box;
         width: 100%;
+        position: relative;
+        z-index: 1001;
     }
 
     .header-content {
@@ -195,10 +197,17 @@
 
     /* Exibe a barra de busca extra embaixo do logo no celular */
     .mobile-search {
-        display: flex;
+        display: none;
         width: 100%;
-        margin-top: 5px;
-        margin-bottom: 10px;
+        padding: 10px 20px;
+        background-color: var(--white);
+        box-sizing: border-box;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        z-index: 999;
+    }
+
+    .mobile-search.open {
+        display: flex;
     }
 
     .header-controls {

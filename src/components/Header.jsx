@@ -8,6 +8,7 @@ const Header = () => {
     const [searchTerm, setSearchTerm] = useState('');
     // Variável que diz pro React se a gaveta do celular está aberta ou fechada:
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
     const navigate = useNavigate();
 
     const handleSearch = (e) => {
@@ -15,6 +16,7 @@ const Header = () => {
         if (searchTerm.trim()) {
             navigate(`/products?filter=${searchTerm}`);
             setIsMenuOpen(false);
+            setIsSearchOpen(false);
         }
     };
 
@@ -44,7 +46,7 @@ const Header = () => {
 
                 <div className='header-controls'>
                     {/* 3. LUPA MOBILE (Apenas desenhada do lado do carrinho pra imitar o layout) */}
-                    <button className="mobile-search-icon">
+                    <button className="mobile-search-icon" onClick={() => setIsSearchOpen(!isSearchOpen)}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="11" cy="11" r="8" stroke="#C92071" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             <path d="M16.5 16.5L22 22" stroke="#C92071" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -66,7 +68,7 @@ const Header = () => {
             </div>
 
             {/* 5. BARRA DE PESQUISA MOBILE (Aparece esticada embaixo apenas no celular) */}
-            <form className='search-container mobile-search' onSubmit={handleSearch}>
+            <form className={`search-container mobile-search ${isSearchOpen ? 'open' : ''}`} onSubmit={handleSearch}>
                 <input type="text" placeholder='Pesquisar produto...' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                 <button>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
