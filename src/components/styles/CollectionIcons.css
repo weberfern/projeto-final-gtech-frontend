@@ -58,3 +58,25 @@
     font-weight: 700;
     color: var(--dark-gray-2);
 }
+
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    .icons-grid {
+        flex-wrap: nowrap;
+        /* Impede que os ícones pulem pra linha de baixo */
+        justify-content: flex-start;
+        overflow-x: auto;
+        /* Cria a barrinha de rolar pro lado */
+        padding-left: 20px;
+        padding-bottom: 20px;
+        /* Espaço para a sombra não cortar */
+    }
+
+    .icon-item {
+        min-width: 104px;
+        /* Garante que o círculo não encolha */
+    }
+}

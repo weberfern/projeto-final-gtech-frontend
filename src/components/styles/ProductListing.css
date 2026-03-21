@@ -5,9 +5,18 @@
     justify-content: flex-start;
 }
 
-/* Responsivo */
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+
 @media (max-width: 768px) {
     .product-listing {
-        justify-content: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .product-listing>* {
+        width: calc(50% - 8px);
+        /* 2 produtos por linha com espaço entre eles */
     }
 }

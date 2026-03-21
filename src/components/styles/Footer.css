@@ -89,7 +89,10 @@
     opacity: 0.8;
 }
 
-/* Responsividade básica */
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+
 @media (max-width: 768px) {
     .footer-container {
         padding: 40px 20px;
@@ -100,7 +103,7 @@
     }
 
     .footer-links-container {
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 40px;
     }
 }

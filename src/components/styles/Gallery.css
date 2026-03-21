@@ -173,3 +173,62 @@
 .thumb-item.active {
     border-color: var(--primary);
 }
+
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Diminui a altura gigantesca de 680px do PC para o celular */
+    .gallery-slide {
+        padding: 40px 20px;
+        height: auto !important;
+        /* Importante para quebrar a altura fixa enviada pela HomePage */
+    }
+
+    /* Muda de linha horizontal para uma Coluna Invertida (Foto 2º -> sobe pro 1º) */
+    .gallery-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* TEXTO (agora embaixo) */
+    .gallery-text {
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .gallery-title {
+        font-size: 40px;
+        /* Título menor para caber na tela */
+        line-height: 48px;
+    }
+
+    .gallery-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .gallery-button {
+        width: 100%;
+        /* Botão ocupa a largura total no celular */
+    }
+
+    /* IMAGEM (agora em cima) */
+    .gallery-image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .gallery-image img {
+        max-height: 250px;
+        /* Evita que o tênis engula a tela inteira */
+    }
+
+    /* Remove as setas laterais para imitar apps modernos (sobram só as bolinhas) */
+    .gallery-arrow {
+        display: none;
+    }
+}

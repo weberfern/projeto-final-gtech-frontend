@@ -91,15 +91,18 @@
     background-color: var(--tertiary);
 }
 
-/* Responsividade */
-@media (max-width: 900px) {
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+
+@media (max-width: 768px) {
     .special-offer-container {
         padding: 40px 20px;
     }
 
     .special-offer-content {
-        flex-direction: column-reverse;
-        /* Imagem vai para cima no mobile, ou baixo dependendo do gosto */
+        flex-direction: column;
+        /* Imagem vai para cima no mobile */
         text-align: center;
     }
 
