@@ -64,19 +64,24 @@
 .card-prices {
     display: flex;
     gap: 10px;
-    align-items: center;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
-.price-original {
+.product-card .price-original {
     font-size: 24px;
     color: var(--light-gray);
     text-decoration: line-through;
+    white-space: nowrap;
+    margin: 0;
 }
 
-.price-discount {
+.product-card .price-discount {
     font-size: 24px;
     font-weight: 700;
     color: var(--dark-gray);
+    white-space: nowrap;
+    margin: 0;
 }
 
 /* ========================================= */
@@ -110,9 +115,13 @@
         text-overflow: ellipsis;
     }
 
-    .price-original,
-    .price-discount {
-        font-size: 16px;
+    .card-prices {
+        gap: 5px;
+        flex-wrap: nowrap;
     }
 
+    .product-card .price-original,
+    .product-card .price-discount {
+        font-size: 16px;
+    }
 }

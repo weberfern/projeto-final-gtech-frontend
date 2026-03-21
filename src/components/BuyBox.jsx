@@ -2,6 +2,11 @@ import './styles/BuyBox.css';
 import ProductOptions from './ProductOptions';
 
 const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, description }) => {
+
+    const formatPrice = (value) => {
+        return Number(value).toFixed(2).replace('.', ',');
+    };
+
     return (
         <div className="buy-box">
 
@@ -24,11 +29,11 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descript
                 <span className="price-currency">R$</span>
                 {priceDiscount ? (
                     <>
-                        <span className="price-discount">{priceDiscount}</span>
-                        <span className="price-original">{price}</span>
+                        <span className="price-discount">{formatPrice(priceDiscount)}</span>
+                        <span className="price-original">R$ {formatPrice(price)}</span>
                     </>
                 ) : (
-                    <span className="price-discount">{price}</span>
+                    <span className="price-discount">R$ {formatPrice(price)}</span>
                 )}
 
             </div>

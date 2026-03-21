@@ -2,6 +2,11 @@ import './styles/ProductCard.css';
 import { Link } from 'react-router-dom';
 
 const ProductCard = ({ id, image, name, category, price, priceDiscount }) => {
+
+    const formartPrice = (value) => {
+        return Number(value).toFixed(2).replace('.', ',');
+    };
+
     return (
         <Link to={`/product/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className='product-card'>
@@ -16,11 +21,11 @@ const ProductCard = ({ id, image, name, category, price, priceDiscount }) => {
                     <div className='card-prices'>
                         {priceDiscount ? (
                             <>
-                                <span className='price-original'>R$ {price}</span>
-                                <span className='price-discount'>R$ {priceDiscount}</span>
+                                <span className='price-original'>R$ {formartPrice(price)}</span>
+                                <span className='price-discount'>R$ {formartPrice(priceDiscount)}</span>
                             </>
                         ) : (
-                            <span className='price-discount'>R$ {price}</span>
+                            <span className='price-discount'>R$ {formartPrice(price)}</span>
                         )}
                     </div>
                 </div>
