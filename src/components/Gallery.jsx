@@ -49,7 +49,8 @@ const Gallery = ({ className = "", width = "100%", height = "auto", radius = "0p
                     </div>
 
                     <div className="gallery-image">
-                        <img src={images[currentIndex].src} alt={images[currentIndex].title} />
+                        <img src={images[currentIndex].src} alt={images[currentIndex].title}
+                            style={{ transform: images[currentIndex].rotate ? `rotate(${images[currentIndex].rotate})` : "none" }} />
                     </div>
                 </div>
 

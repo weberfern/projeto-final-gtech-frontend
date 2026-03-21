@@ -136,3 +136,178 @@
     border-bottom-color: var(--primary);
     font-weight: 700;
 }
+
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+
+/* Ocultar móveis de celular enquanto a tela for de Computador */
+.menu-hamburger,
+.mobile-search-icon,
+.mobile-search,
+.mobile-menu-overlay {
+    display: none;
+}
+
+/* O COMANDO MÁGICO DO NAVEGADOR: Só aplica isso se a tela for estreita */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 20px;
+        height: auto;
+        gap: 15px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .header-content {
+        margin-top: 0;
+        gap: 15px;
+    }
+
+    /* Esconde navegação, login e busca do formato Desktop */
+    .desktop-nav,
+    .desktop-actions,
+    .desktop-search {
+        display: none !important;
+    }
+
+    /* Mostra elementos do Celular */
+    .menu-hamburger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .mobile-search-icon {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-right: -15px;
+        /* aproxima do carrinho */
+    }
+
+    .cart-container {
+        margin-left: 10px;
+    }
+
+    /* Exibe a barra de busca extra embaixo do logo no celular */
+    .mobile-search {
+        display: flex;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .header-controls {
+        gap: 15px;
+    }
+
+    .search-container input {
+        box-sizing: border-box;
+    }
+
+    /* ================================== */
+    /*   GAVETA DO MENU (SIDEBAR MODAL)   */
+    /* ================================== */
+    .mobile-menu-overlay {
+        display: block;
+        /* Existe na DOM invisivel, o javascript quem mostra */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Fundo da tela preto escurecido */
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    /* Adiciona a classe '.open' via Javascript no Header.jsx */
+    .mobile-menu-overlay.open {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .mobile-menu-content {
+        position: absolute;
+        top: 0;
+        left: -300px;
+        /* Esconde a gaveta inteira lá pra trás da esquerda! */
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--white);
+        padding: 30px;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu-overlay.open .mobile-menu-content {
+        left: 0;
+        /* Puxa a gaveta de volta pra tela fazendo ela deslizar! */
+    }
+
+    .mobile-menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .mobile-menu-header h2 {
+        color: var(--dark-gray);
+        font-size: 16px;
+    }
+
+    .close-menu {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: var(--dark-gray-2);
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobile-nav a {
+        font-size: 16px;
+        color: var(--dark-gray-2);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .mobile-nav a.active {
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+    .mobile-divider {
+        border: none;
+        border-top: 1px solid var(--light-gray-2);
+        margin: 30px 0;
+    }
+
+    .mobile-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .mobile-actions .login-button {
+        width: 100%;
+        text-align: center;
+    }
+}

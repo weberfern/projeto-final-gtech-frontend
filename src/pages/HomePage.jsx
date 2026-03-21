@@ -12,21 +12,26 @@ import img04 from "../assets/produc-image-4-removebg.png";
 import img05 from "../assets/produc-image-5-removebg.png";
 import img06 from "../assets/produc-image-6-removebg.png";
 import { mockProducts } from "../data/mockProducts";
+import Himg01 from "../assets/home-slide-1.png";
+import Himg02 from "../assets/home-slide-2.png";
+import Himg03 from "../assets/home-slide-3.png";
+import Himg04 from "../assets/home-slide-4.png";
 
 const HomePage = () => {
 
     {/* IMAGENS DO CARROSEL */ }
     const heroImages = [
         {
-            src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-8.jpeg",
+            src: Himg01,
             title: "Queima de estoque Nike 🔥",
             subtitle: "Melhores ofertas personalizadas",
             description: "Estoque da Nike pegando fogo, corre se não derrete!",
-            buttonText: "Ver Ofertas"
+            buttonText: "Ver Ofertas",
+            rotate: "-20deg"
         },
 
         {
-            src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-2.jpeg",
+            src: Himg02,
             title: "Coleção de Verão",
             subtitle: "Novidades exclusivas",
             description: "Aproveite as melhores peças para o seu verão com estilo e conforto.",
@@ -34,7 +39,7 @@ const HomePage = () => {
         },
 
         {
-            src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-3.jpeg",
+            src: Himg03,
             title: "Coleção de Inverno",
             subtitle: "Novidades exclusivas",
             description: "Aproveite as melhores peças para o seu inverno com estilo e conforto.",
@@ -42,7 +47,7 @@ const HomePage = () => {
         },
 
         {
-            src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-4.jpeg",
+            src: Himg04,
             title: "Coleção de Outono",
             subtitle: "Novidades exclusivas",
             description: "Aproveite as melhores peças para o seu outono com estilo e conforto.",
