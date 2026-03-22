@@ -3,42 +3,6 @@
 Este projeto foi desenvolvido como parte do **Bootcamp Geração Tech 3.0** da Digital College.
 Trata-se de um e-commerce, focado em uma experiência de usuário moderna e responsiva.
 
-## 📸 Demonstração
-
-### ✨ Página Inicial (Home)
-![Preview da HomePage 1](src/assets/template-for-preview.png)
-![Preview da HomePage 2](src/assets/template-for-preview-2.png)
-![Preview da HomePage 3](src/assets/template-for-preview-3.png)
-![Preview da HomePage 4](src/assets/template-for-preview-4.png)
-
-### 🛍️ Tela de Produtos (Filtros e Listagem)
-![Tela de Produtos](src/assets/template-for-preview-5.png)
-
-### 👟 Visualização do Produto (Detalhes da Compra)
-![Visualização do Produto 1](src/assets/template-for-preview-6.png)
-![Visualização do Produto 2](src/assets/template-for-preview-7.png)
-
-### 📑 Tela de Categorias
-![Tela de Categorias](src/assets/template-for-preview-8.png)
-
-### 📦 Tela de Meus Pedidos
-![Meus Pedidos](src/assets/template-for-preview-9.png)
-
-### 📱 Versão Mobile (Responsividade 100% Adaptável)
-
-Abaixo, um mosaico das visões otimizadas para celulares, dispostas em ordem (Home, Vitrine, Telas de Compra, Menus e Filtros Off-Canvas):
-
-<p align="center">
-  <img src="src/assets/template-for-preview-10.png" width="31%" title="Home Mobile Parte 1" />
-  <img src="src/assets/template-for-preview-12.png" width="31%" title="Vitrine Customizada" />
-  <img src="src/assets/template-for-preview-14.png" width="31%" title="Menu Hamburguer Módular" />
-</p>
-<p align="center">
-  <img src="src/assets/template-for-preview-11.png" width="31%" title="Home Mobile Parte 2" />
-  <img src="src/assets/template-for-preview-13.png" width="31%" title="Acesso à Galeria Mobile" />
-  <img src="src/assets/template-for-preview-15.png" width="31%" title="Filtro Modular em Drawer" />
-</p>
-
 ## 👥 Autores
 **WeberFern**
 - GitHub: [weberfern](https://github.com/weberfern)
@@ -99,3 +63,39 @@ npm run dev
 - **Meus Pedidos** (`/orders`): Componente limpo de fallback amigável informando a situação da conta.
 - **Componentes Altamente Escaláveis**: `Header` rico, `Footer` robusto, `Gallery` otimizada com pré-carregamento, `ProductCard`, `FilterGroup`, entre outros.
 - **Mobile First e Flexlayout**: 100% responsivo para dispositivos móveis com menus gavetas, empilhamento elegante e adequação rigorosa as margens solicitadas pelo Figma.
+
+## 📸 Demonstração
+
+### ✨ Página Inicial (Home)
+![Preview da HomePage 1](src/assets/template-for-preview.png)
+![Preview da HomePage 2](src/assets/template-for-preview-2.png)
+![Preview da HomePage 3](src/assets/template-for-preview-3.png)
+![Preview da HomePage 4](src/assets/template-for-preview-4.png)
+
+### 🛍️ Tela de Produtos (Filtros e Listagem)
+![Tela de Produtos](src/assets/template-for-preview-5.png)
+
+### 👟 Visualização do Produto (Detalhes da Compra)
+![Visualização do Produto 1](src/assets/template-for-preview-6.png)
+![Visualização do Produto 2](src/assets/template-for-preview-7.png)
+
+### 📑 Tela de Categorias
+![Tela de Categorias](src/assets/template-for-preview-8.png)
+
+### 📦 Tela de Meus Pedidos
+![Meus Pedidos](src/assets/template-for-preview-9.png)
+
+### 📱 Versão Mobile (Responsividade 100% Adaptável)
+
+Abaixo, um mosaico das visões otimizadas para celulares, dispostas em ordem (Home, Vitrine, Telas de Compra, Menus e Filtros Off-Canvas):
+
+<p align="center">
+  <img src="src/assets/template-for-preview-10.png" width="31%" title="Home Mobile Parte 1" />
+  <img src="src/assets/template-for-preview-12.png" width="31%" title="Vitrine Customizada" />
+  <img src="src/assets/template-for-preview-14.png" width="31%" title="Menu Hamburguer Módular" />
+</p>
+<p align="center">
+  <img src="src/assets/template-for-preview-11.png" width="31%" title="Home Mobile Parte 2" />
+  <img src="src/assets/template-for-preview-13.png" width="31%" title="Acesso à Galeria Mobile" />
+  <img src="src/assets/template-for-preview-15.png" width="31%" title="Filtro Modular em Drawer" />
+</p>
