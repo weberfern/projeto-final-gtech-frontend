@@ -4,17 +4,18 @@ Este projeto foi desenvolvido como parte do **Bootcamp Geração Tech 3.0** da D
 Trata-se de um e-commerce, focado em uma experiência de usuário moderna e responsiva.
 
 ## 👥 Autores
+
 **WeberFern**
 - GitHub: [weberfern](https://github.com/weberfern)
-- Email: weber12@gmail.com
+- Email: [weber12@gmail.com]
 
 **Sandra**
-- GitHub: [sandra](https://github.com/sandra)
-- Email: [EMAIL_ADDRESS]
+- GitHub: [SandraVasconcelos-74](https://github.com/SandraVasconcelos-74)
+- Email: [sandrajulala@gmail.com]
 
 **Assis**
-- GitHub: [assis](https://github.com/assis)
-- Email: [EMAIL_ADDRESS]
+- GitHub: [assissousa](https://github.com/assissousa)
+- Email: [assispsousa@gmail.com]
 
 ## 📂 Estrutura de Pastas
 O projeto foi totalmente organizado separando as esferas de componentes modulares de suas páginas agregadoras, garantindo fácil manutenção, menor poluição de leitura e roteamento claro usando o DOM virtual da árvore do React.
