@@ -4,7 +4,6 @@
     gap: 10px;
     width: 292px;
     cursor: pointer;
-    margin-bottom: 120px;
 }
 
 .card-image {
@@ -95,7 +94,6 @@
         /* Ocupa a largura toda no mobile */
         gap: 5px;
         box-sizing: border-box;
-        margin-bottom: 70px;
     }
 
     .card-image {

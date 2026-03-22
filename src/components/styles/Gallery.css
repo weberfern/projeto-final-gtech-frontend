@@ -87,6 +87,7 @@
     align-items: center;
     position: relative;
     width: 50%;
+    align-self: stretch;
 }
 
 .gallery-image img {
