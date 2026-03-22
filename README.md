@@ -1,19 +1,67 @@
 # Projeto Drip Store - Frontend 👟👕
 
 Este projeto foi desenvolvido como parte do **Bootcamp Geração Tech 3.0** da Digital College.
-Trata-se de um e-commerce de moda e calçados, focado em uma experiência de usuário moderna e responsiva.
+Trata-se de um e-commerce, focado em uma experiência de usuário moderna e responsiva.
 
 ## 📸 Demonstração
 
-![Preview da HomePage](src/assets/template-for-preview.png)
-![Preview da HomePage](src/assets/template-for-preview-2.png)
-![Preview da HomePage](src/assets/template-for-preview-3.png)
-![Preview da HomePage](src/assets/template-for-preview-4.png)
+### ✨ Página Inicial (Home)
+![Preview da HomePage 1](src/assets/template-for-preview.png)
+![Preview da HomePage 2](src/assets/template-for-preview-2.png)
+![Preview da HomePage 3](src/assets/template-for-preview-3.png)
+![Preview da HomePage 4](src/assets/template-for-preview-4.png)
 
-## 👥 Autor
+### 🛍️ Tela de Produtos (Filtros e Listagem)
+![Tela de Produtos](src/assets/template-for-preview-5.png)
+
+### 👟 Visualização do Produto (Detalhes da Compra)
+![Visualização do Produto 1](src/assets/template-for-preview-6.png)
+![Visualização do Produto 2](src/assets/template-for-preview-7.png)
+
+### 📑 Tela de Categorias
+![Tela de Categorias](src/assets/template-for-preview-8.png)
+
+### 📦 Tela de Meus Pedidos
+![Meus Pedidos](src/assets/template-for-preview-9.png)
+
+### 📱 Versão Mobile (Responsividade 100% Adaptável)
+**Tratamento de Telas Iniciais (Home e Vitrine):**
+![Home Mobile 1](src/assets/template-for-preview-10.png)
+![Home Mobile 2](src/assets/template-for-preview-11.png)
+
+**Reorganização Espacial no Fechamento da Compra (Produto):**
+![Produto Mobile 1](src/assets/template-for-preview-12.png)
+![Produto Mobile 2](src/assets/template-for-preview-13.png)
+
+**Navegação Complexa em Menus Retráteis e Filtros Modulares:**
+![Menu Hamburguer Mobile](src/assets/template-for-preview-14.png)
+![Filtro Modular Mobile](src/assets/template-for-preview-15.png)
+
+## 👥 Autores
 **WeberFern**
 - GitHub: [weberfern](https://github.com/weberfern)
 - Email: weber12@gmail.com
+**Sandra**
+- GitHub: [sandra](https://github.com/sandra)
+- Email: [EMAIL_ADDRESS]
+**Assis**
+- GitHub: [assis](https://github.com/assis)
+- Email: [EMAIL_ADDRESS]
+
+## 📂 Estrutura de Pastas
+O projeto foi totalmente organizado separando as esferas de componentes modulares de suas páginas agregadoras, garantindo fácil manutenção, menor poluição de leitura e roteamento claro usando o DOM virtual da árvore do React.
+
+```text
+├── src/
+│   ├── assets/       # Ponto de cache para Ícones estáticos e logomarcas
+│   ├── components/   # Componentes da aplicação (Header, Footer, ProductCard, etc)
+│   │   └── styles/   # Estilos (CSS) em escopo modular
+│   ├── data/         # Mock simulando o recebimento de Produtos do Back-end
+│   ├── layouts/      # Camadas Mestres (Carrega Headers e Footers de Base)
+│   ├── pages/        # Telas completas roteáveis consumindo os componentes
+│   ├── App.jsx       # Controlador Integrador de Rotas e Navegação (Router)
+│   └── main.jsx      # Ponto de Injeção Primária no Elemento Raiz do DOM
+```
 
 ## 🚀 Tecnologias Utilizadas
 - **React**: Biblioteca JavaScript para construção de interfaces.
@@ -39,15 +87,11 @@ npm install
 npm run dev
 ```
 
-## 🎨 Funcionalidades
-- **Home Page**:
-  - Carrossel de destaques (Hero Slide).
-  - Coleções em destaque.
-  - Ícones de categorias.
-  - Listagem de produtos em alta.
-  - Seção de Oferta Especial.
-- **Componentes Reutilizáveis**: Header, Footer, Gallery, ProductCard, Section, etc.
-- **Responsividade**: Layout adaptável para mobile e desktop.
-
----
-Desenvolvido por WeberFern durante o Bootcamp Geração Tech 3.0.
+## 🎨 Funcionalidades e Rotas Entregues
+- **Home Page** (`/`): Carrossel dinâmico, galerias promocionais e vitrine de tendência.
+- **Listagem de Produtos** (`/products`): Grade dinâmica de cartões responsivos, com integração baseada em Checkboxes e Menu de Ordenação de Preço, capturando interações da URL paramétrica.
+- **Página de Visualização do Produto** (`/product/:id`): Galeria Swiper de Imagens completa. Seletores de tamanho/cor, cálculo automático das taxas de desconto (%) e BuyBox rica, contendo listagem fluida de produtos recomendados.
+- **Categorias** (`/categories`): Rota dedicada unificando todos os atalhos departamentais.
+- **Meus Pedidos** (`/orders`): Componente limpo de fallback amigável informando a situação da conta.
+- **Componentes Altamente Escaláveis**: `Header` rico, `Footer` robusto, `Gallery` otimizada com pré-carregamento, `ProductCard`, `FilterGroup`, entre outros.
+- **Mobile First e Flexlayout**: 100% responsivo para dispositivos móveis com menus gavetas, empilhamento elegante e adequação rigorosa as margens solicitadas pelo Figma.
