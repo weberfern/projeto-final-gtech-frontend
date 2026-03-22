@@ -25,17 +25,19 @@ Trata-se de um e-commerce, focado em uma experiência de usuário moderna e resp
 ![Meus Pedidos](src/assets/template-for-preview-9.png)
 
 ### 📱 Versão Mobile (Responsividade 100% Adaptável)
-**Tratamento de Telas Iniciais (Home e Vitrine):**
-![Home Mobile 1](src/assets/template-for-preview-10.png)
-![Home Mobile 2](src/assets/template-for-preview-11.png)
 
-**Reorganização Espacial no Fechamento da Compra (Produto):**
-![Produto Mobile 1](src/assets/template-for-preview-12.png)
-![Produto Mobile 2](src/assets/template-for-preview-13.png)
+Abaixo, um mosaico das visões otimizadas para celulares, dispostas em ordem (Home, Vitrine, Telas de Compra, Menus e Filtros Off-Canvas):
 
-**Navegação Complexa em Menus Retráteis e Filtros Modulares:**
-![Menu Hamburguer Mobile](src/assets/template-for-preview-14.png)
-![Filtro Modular Mobile](src/assets/template-for-preview-15.png)
+<p align="center">
+  <img src="src/assets/template-for-preview-10.png" width="31%" title="Home Mobile Parte 1" />
+  <img src="src/assets/template-for-preview-12.png" width="31%" title="Vitrine Customizada" />
+  <img src="src/assets/template-for-preview-14.png" width="31%" title="Menu Hamburguer Módular" />
+</p>
+<p align="center">
+  <img src="src/assets/template-for-preview-11.png" width="31%" title="Home Mobile Parte 2" />
+  <img src="src/assets/template-for-preview-13.png" width="31%" title="Acesso à Galeria Mobile" />
+  <img src="src/assets/template-for-preview-15.png" width="31%" title="Filtro Modular em Drawer" />
+</p>
 
 ## 👥 Autores
 **WeberFern**
