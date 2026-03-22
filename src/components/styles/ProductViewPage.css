@@ -61,4 +61,9 @@
         gap: 30px;
         margin-top: 20px;
     }
+
+    /* Esconde os produtos recomendados do 3º em diante (Deixa apenas 2) */
+    .related-products .product-listing>*:nth-child(n+3) {
+        display: none;
+    }
 }

@@ -118,4 +118,11 @@
         aspect-ratio: 380 / 250;
         box-sizing: border-box;
     }
+
+    .collection-card button {
+        padding: 15px 30px;
+        /* Deixa o botão bem mais gordinho e "clicável" pro dedo */
+        font-size: 18px;
+        /* Aumenta o tamanho da letra */
+    }
 }

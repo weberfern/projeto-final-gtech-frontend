@@ -1,4 +1,4 @@
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Logo from './Logo';
 import miniCart from '../assets/mini-cart.svg';
@@ -10,6 +10,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleSearch = (e) => {
         e.preventDefault();
@@ -48,8 +49,8 @@ const Header = () => {
                     {/* 3. LUPA MOBILE (Apenas desenhada do lado do carrinho pra imitar o layout) */}
                     <button className="mobile-search-icon" onClick={() => setIsSearchOpen(!isSearchOpen)}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11" cy="11" r="8" stroke={isSearchOpen ? "#666666" : "#C92071"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M16.5 16.5L22 22" stroke={isSearchOpen ? "#666666" : "#C92071"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <circle cx="11" cy="11" r="8" stroke={isSearchOpen ? "#C92071" : "#666666"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M16.5 16.5L22 22" stroke={isSearchOpen ? "#C92071" : "#666666"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </button>
 
@@ -82,7 +83,12 @@ const Header = () => {
             <nav className='nav-container desktop-nav'>
                 <ul>
                     <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>
-                    <li><NavLink to="/products" className={({ isActive }) => isActive ? "active" : ""}>Produtos</NavLink></li>
+                    <li><NavLink
+                        to="/products"
+                        className={() => location.pathname.startsWith('/product') ? "active" : ""}
+                    >
+                        Produtos
+                    </NavLink></li>
                     <li><NavLink to="/categories" className={({ isActive }) => isActive ? "active" : ""}>Categorias</NavLink></li>
                     <li><NavLink to="/orders" className={({ isActive }) => isActive ? "active" : ""}>Meus Pedidos</NavLink></li>
                 </ul>
@@ -102,7 +108,13 @@ const Header = () => {
 
                     <nav className='mobile-nav'>
                         <NavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</NavLink>
-                        <NavLink to="/products" onClick={() => setIsMenuOpen(false)}>Produtos</NavLink>
+                        <NavLink
+                            to="/products"
+                            className={() => location.pathname.startsWith('/product') ? "active" : ""}
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Produtos
+                        </NavLink>
                         <NavLink to="/categories" onClick={() => setIsMenuOpen(false)}>Categorias</NavLink>
                         <NavLink to="/orders" onClick={() => setIsMenuOpen(false)}>Meus Pedidos</NavLink>
                     </nav>

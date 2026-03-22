@@ -74,3 +74,19 @@
     max-height: 80%;
     object-fit: contain;
 }
+
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+@media (max-width: 768px) {
+
+    /* Diminui o "caixotão" de 570px para um tamanho perfeito de tela de celular */
+    .main-image-swiper {
+        height: 320px;
+    }
+
+    /* Aproveitando: dá uma leve achatada nas miniaturas para elas não ficarem esticadas */
+    .thumbs-swiper {
+        height: 80px;
+    }
+}

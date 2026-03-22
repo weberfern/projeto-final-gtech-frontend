@@ -108,7 +108,7 @@
     padding: 15px 0;
     cursor: pointer;
     transition: background-color 0.2s;
-    width: 100%;
+    width: 220px;
     margin-top: 10px;
 }
 
@@ -144,5 +144,6 @@
     .buy-box-btn {
         margin-bottom: 30px;
         /* Dá uma respirada legal antes da faixa final de Recomendados */
+        width: 100%;
     }
 }

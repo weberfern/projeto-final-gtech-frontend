@@ -103,7 +103,16 @@
     }
 
     .footer-links-container {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 40px;
+    }
+
+    .footer-column {
+        min-width: 0;
+    }
+
+    .footer-links-container>.footer-column:nth-child(3) {
+        grid-column: span 2;
     }
 }

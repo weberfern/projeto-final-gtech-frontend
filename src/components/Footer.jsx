@@ -70,7 +70,7 @@ const Footer = () => {
             {/* COPYRIGHT */}
             <hr className="footer-divider" />
             <div className="footer-copyright">
-                &copy; {anoAtual} - Drip Store - Todos os direitos reservados.
+                &copy; {anoAtual} - Digital College - Todos os direitos reservados.
             </div>
         </footer>
     )

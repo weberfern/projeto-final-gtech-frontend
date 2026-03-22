@@ -63,9 +63,19 @@
     }
 
     .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Diminui a fonte do Título para abrir espaço horizontal */
+    .section-title {
+        font-size: 18px;
+    }
+
+    /* Dá uma leve reduzida no link pro layout respirar melhor */
+    .section-link {
+        font-size: 14px;
     }
 
     .section-header.center {

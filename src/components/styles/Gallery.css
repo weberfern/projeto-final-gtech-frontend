@@ -237,6 +237,15 @@
         /* Botão ocupa a largura total no celular */
     }
 
+    .gallery-text a {
+        width: 100%;
+        display: block;
+    }
+
+    .gallery-subtitle {
+        color: var(--primary);
+    }
+
     /* IMAGEM (agora em cima) */
     .gallery-image {
         width: 100%;
