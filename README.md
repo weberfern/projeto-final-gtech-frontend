@@ -43,9 +43,11 @@ Abaixo, um mosaico das visões otimizadas para celulares, dispostas em ordem (Ho
 **WeberFern**
 - GitHub: [weberfern](https://github.com/weberfern)
 - Email: weber12@gmail.com
+
 **Sandra**
 - GitHub: [sandra](https://github.com/sandra)
 - Email: [EMAIL_ADDRESS]
+
 **Assis**
 - GitHub: [assis](https://github.com/assis)
 - Email: [EMAIL_ADDRESS]
