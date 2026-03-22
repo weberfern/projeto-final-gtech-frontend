@@ -11,6 +11,13 @@ import img10 from "../assets/produc-image-10-removebg.png";
 import img11 from "../assets/produc-image-11-removebg.png";
 import img12 from "../assets/produc-image-12-removebg.png";
 import img13 from "../assets/produc-image-13-removebg.png";
+import img14 from "../assets/produc-image-14-removebg.png";
+import img15 from "../assets/produc-image-15-removebg.png";
+import img16 from "../assets/produc-image-16-removebg.png";
+import img17 from "../assets/produc-image-17-removebg.png";
+import img18 from "../assets/produc-image-18-removebg.png";
+import img19 from "../assets/produc-image-19-removebg.png";
+import img20 from "../assets/produc-image-20-removebg.png";
 
 export const mockProducts = [
     {
@@ -67,7 +74,7 @@ export const mockProducts = [
         category: "Tênis",
         price: 219.00,
         priceDiscount: 119.00,
-        image: img01
+        image: img14
     },
     {
         id: 8,
@@ -75,7 +82,7 @@ export const mockProducts = [
         category: "Tênis",
         price: 200.00,
         priceDiscount: 100.00,
-        image: img02
+        image: img15
     },
     {
         id: 9,
@@ -83,15 +90,15 @@ export const mockProducts = [
         category: "Tênis",
         price: 899.00,
         priceDiscount: null,
-        image: img03
+        image: img16
     },
     {
         id: 10,
-        name: "Tênis Olympikus Corre 2",
+        name: "Tênis Nike Duramo Speed",
         category: "Tênis",
         price: 399.00,
         priceDiscount: 299.00,
-        image: img04
+        image: img19
     },
     {
         id: 11,
@@ -99,7 +106,7 @@ export const mockProducts = [
         category: "Tênis",
         price: 299.00,
         priceDiscount: 199.00,
-        image: img05
+        image: img18
     },
     {
         id: 12,
@@ -107,7 +114,7 @@ export const mockProducts = [
         category: "Tênis",
         price: 259.90,
         priceDiscount: null,
-        image: img06
+        image: img17
     },
     {
         id: 13,

@@ -7,11 +7,14 @@ const ProductCard = ({ id, image, name, category, price, priceDiscount }) => {
         return Number(value).toFixed(2).replace('.', ',');
     };
 
+    /* Calculo da % de desconto para exibir X % OFF no card do produto */
+    const discountPercentage = priceDiscount ? Math.ceil(((price - priceDiscount) / price) * 100) : 0;
+
     return (
         <Link to={`/product/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className='product-card'>
                 <div className='card-image'>
-                    {priceDiscount && <span className='discount-badge'>30% OFF</span>}
+                    {priceDiscount && <span className='discount-badge'>{discountPercentage}% OFF</span>}
                     <img src={image} alt={name} />
                 </div>
 

@@ -18,8 +18,6 @@
     border-radius: 4px;
     margin-bottom: 20px;
     /* O respiro entre o grandão e os pequenos */
-    background-color: #E2E3FF;
-    /* fundo principal! */
 }
 
 .main-image-container {
@@ -69,8 +67,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffe8eb;
-    /* Um rosinha bebê para diferenciar as mniaturas, modifique aqui se quiser de outra cor */
 }
 
 .thumb-image-container img {

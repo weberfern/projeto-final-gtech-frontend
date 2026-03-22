@@ -11,6 +11,8 @@ import { useLocation } from 'react-router-dom';
 const ProductListingPage = () => {
 
     const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const filterQuery = searchParams.get("filter") || "";
     const [products, setProducts] = useState(mockProducts);
     const [sortType, setSortType] = useState("relevantes");
     const [selectedBrands, setSelectedBrands] = useState([]); /* Guarda as caixas de filtros selecionadas */
@@ -52,6 +54,20 @@ const ProductListingPage = () => {
     useEffect(() => {
         let sortedProducts = [...mockProducts];
 
+        /* Filtro de pesquisa */
+        if (filterQuery) {
+            // Ferramenta que corta fora todos os acentos (ex: "Tênis" vira "tenis") e joga tudo pra minúsculo
+            const limpaTexto = (texto) => texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+            const queryLimpa = limpaTexto(filterQuery);
+            sortedProducts = sortedProducts.filter((product) => {
+                const nomeLimpo = limpaTexto(product.name);
+                const categoriaLimpa = limpaTexto(product.category);
+
+                // O return é obrigatório aqui! Ele procura pedaços da palavra digitada em qualquer lugar do nome ou categoria
+                return nomeLimpo.includes(queryLimpa) || categoriaLimpa.includes(queryLimpa);
+            });
+        }
+
         /* Filtro de marcas */
         if (selectedBrands.length > 0) {
             sortedProducts = sortedProducts.filter(product => {
@@ -83,7 +99,7 @@ const ProductListingPage = () => {
         }
 
         setProducts(sortedProducts);
-    }, [sortType, selectedBrands, selectedCategories]);
+    }, [sortType, selectedBrands, selectedCategories, filterQuery]);
 
     return (
         <Layout>
@@ -94,7 +110,13 @@ const ProductListingPage = () => {
                     {/* 1. NOVO CABEÇALHO HORIZONTAL (Título <-   Espaço vazio   -> Ordenar) */}
                     <div className="product-listing-header">
                         <h2 className="product-listing-title">
-                            <strong>Resultados para "Tênis"</strong> - {products.length} produtos
+                            {filterQuery ? (
+                                <><strong>Resultados para "{filterQuery}"</strong> - {products.length} produtos</>
+                            ) : (
+                                <>
+                                    <strong>Todos os produtos</strong> - {products.length} produtos
+                                </>
+                            )}
                         </h2>
                         {/* 6.1 - Ordenar por (agora a caixinha vive livre no header) */}
                         <div className="header-actions">

@@ -39,8 +39,26 @@
     margin: 0 auto 40px auto;
 }
 
-/* 🪄 A Mágica: Anulamos o padding gigante do Section SÓ nesta página */
 .related-products .section-container {
     padding: 0 !important;
     background-color: transparent !important;
+}
+
+/* Pinta inteiramente o quadradinho de Tamanho quando selecionado */
+.type-text.active {
+    background-color: #C92071;
+    color: #FFFFFF;
+    border: 2px solid #C92071;
+}
+
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+@media (max-width: 768px) {
+    .product-view-content {
+        flex-direction: column;
+        /* Empilha a Galeria e o BuyBox */
+        gap: 30px;
+        margin-top: 20px;
+    }
 }

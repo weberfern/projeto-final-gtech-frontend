@@ -103,7 +103,7 @@
 .gallery-image::after {
     content: '';
     position: absolute;
-    top: 78px;
+    top: 50px;
     right: -200px;
     width: 140px;
     height: 140px;

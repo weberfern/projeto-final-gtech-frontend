@@ -7,6 +7,15 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descript
         return Number(value).toFixed(2).replace('.', ',');
     };
 
+    const renderPrice = (value) => {
+        const [reais, centavos] = formatPrice(value).split(',');
+        return (
+            <>
+                {reais}<span className="price-cents">,{centavos}</span>
+            </>
+        );
+    };
+
     return (
         <div className="buy-box">
 
@@ -19,8 +28,9 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descript
                 <span className='buy-box-stars'>
                     ⭐⭐⭐⭐⭐
                     <span className='buy-box-rating'>
-                        {rating} ⭐ <span className='buy-box-rating-label'>(90 avaliações)</span>
+                        {rating} ⭐
                     </span>
+                    <span className='buy-box-rating-label'>(90 avaliações)</span>
                 </span>
             </div>
 
@@ -29,11 +39,11 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descript
                 <span className="price-currency">R$</span>
                 {priceDiscount ? (
                     <>
-                        <span className="price-discount">{formatPrice(priceDiscount)}</span>
+                        <span className="price-discount">{renderPrice(priceDiscount)}</span>
                         <span className="price-original">R$ {formatPrice(price)}</span>
                     </>
                 ) : (
-                    <span className="price-discount">R$ {formatPrice(price)}</span>
+                    <span className="price-discount">{renderPrice(price)}</span>
                 )}
 
             </div>

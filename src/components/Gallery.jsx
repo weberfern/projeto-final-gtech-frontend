@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import arrowLeft from '../assets/arrow-left.svg';
 import arrowRight from '../assets/arrow-right.svg';
 import './styles/Gallery.css';
@@ -7,6 +7,15 @@ import { Link } from "react-router-dom";
 const Gallery = ({ className = "", width = "100%", height = "auto", radius = "0px", showThumbs = false, images = [] }) => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        if (images.length === 0) return;
+
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => prevIndex === images.length - 1 ? 0 : prevIndex + 1);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, [images.length]);
 
     const handlePrev = () => {
         if (currentIndex > 0) {

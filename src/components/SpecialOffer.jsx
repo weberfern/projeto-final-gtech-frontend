@@ -1,5 +1,6 @@
 import './styles/SpecialOffer.css';
 import sneackerImage from '../assets/laye-sneaker.png';
+import { Link } from 'react-router-dom';
 
 const SpecialOffer = () => {
     return (
@@ -15,7 +16,9 @@ const SpecialOffer = () => {
                     <span className='offer-tag'>Oferta especial</span>
                     <h2 className='offer-title'>Air Jordan edição de colecionador</h2>
                     <p className='offer-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt possimus at ea esse impedit accusamus quas a natus id quos dolor maiores, excepturi quis sequi. Molestiae eligendi consequatur dignissimos!</p>
-                    <button className='offer-button'>Ver Oferta</button>
+                    <Link to="/products">
+                        <button className='offer-button'>Ver Oferta</button>
+                    </Link>
                 </div>
             </div>
         </section>

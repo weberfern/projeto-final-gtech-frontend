@@ -52,14 +52,13 @@
 
 .buy-box-price {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
     gap: 5px;
 }
 
 .price-currency {
     font-size: 16px;
     color: #474747;
-    margin-top: 5px;
 }
 
 .price-discount {
@@ -68,11 +67,14 @@
     color: #474747;
 }
 
+.price-cents {
+    font-size: 16px;
+}
+
 .price-original {
     font-size: 16px;
     color: #CCCCCC;
     text-decoration: line-through;
-    margin-top: 15px;
     margin-left: 10px;
 }
 
@@ -112,4 +114,35 @@
 
 .buy-box-btn:hover {
     background-color: #D48C00;
+}
+
+/* ========================================= */
+/*       🔴 RESPONSIVIDADE (MOBILE) 🔴       */
+/* ========================================= */
+@media (max-width: 768px) {
+    .buy-box {
+        max-width: 100%;
+        /* Libera pra ele abraçar toda a horizontal do celular */
+        box-sizing: border-box;
+    }
+
+    .buy-box-name {
+        font-size: 24px;
+        /* Diminui o textão do nome do Tênis */
+    }
+
+    .price-discount {
+        font-size: 28px;
+        /* Diminui o textão do R$ */
+    }
+
+    .buy-box-options {
+        gap: 15px;
+        /* Aproxima um pouco as opções de Cores e Tamanho */
+    }
+
+    .buy-box-btn {
+        margin-bottom: 30px;
+        /* Dá uma respirada legal antes da faixa final de Recomendados */
+    }
 }

@@ -52,11 +52,11 @@ const ProductViewPage = () => {
                     <div className="product-gallery-wrapper" style={{ flex: 1, minWidth: 0 }}>
                         <ProductGallery images={[
                             { src: product.image },
-                            { src: img02 },
-                            { src: img03 },
-                            { src: img04 },
-                            { src: img05 },
-                            { src: img06 }
+                            { src: product.image },
+                            { src: product.image },
+                            { src: product.image },
+                            { src: product.image },
+                            { src: product.image }
                         ]} />
                     </div>
                     {/* DIREITA: BUYBOX */}
@@ -68,7 +68,7 @@ const ProductViewPage = () => {
                             stars={5}
                             price={product.price}
                             priceDiscount={product.priceDiscount}
-                            description="Mussum Ipsum, cacilds vidis litro abertis."
+                            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
                         />
                     </div>
                 </div>

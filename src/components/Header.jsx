@@ -48,8 +48,8 @@ const Header = () => {
                     {/* 3. LUPA MOBILE (Apenas desenhada do lado do carrinho pra imitar o layout) */}
                     <button className="mobile-search-icon" onClick={() => setIsSearchOpen(!isSearchOpen)}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11" cy="11" r="8" stroke="#C92071" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M16.5 16.5L22 22" stroke="#C92071" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <circle cx="11" cy="11" r="8" stroke={isSearchOpen ? "#666666" : "#C92071"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M16.5 16.5L22 22" stroke={isSearchOpen ? "#666666" : "#C92071"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </button>
 

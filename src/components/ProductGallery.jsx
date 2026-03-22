@@ -9,6 +9,8 @@ import 'swiper/css/thumbs';
 const ProductGallery = ({ images }) => {
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    /* Paleta de cores de fundo do thumbs do buybox */
+    const bgColors = ['#E2E3FF', '#FFE8BC', '#FFC0BC', '#DEC699', '#E8DFCF'];
 
     return (
         <div className='product-gallery'>
@@ -24,7 +26,7 @@ const ProductGallery = ({ images }) => {
                 {/* Varre o array de objetos que recebermos e cria os slides */}
                 {images.map((img, index) => (
                     <SwiperSlide key={`main-${index}`}>
-                        <div className='main-image-container'>
+                        <div className='main-image-container' style={{ backgroundColor: bgColors[index % bgColors.length] }}>
                             <img src={img.src} alt={`Produto ${index + 1}`} />
                         </div>
                     </SwiperSlide>
@@ -42,7 +44,7 @@ const ProductGallery = ({ images }) => {
                 className='thumbs-swiper'>
                 {images.map((img, index) => (
                     <SwiperSlide key={`thumb-${index}`}>
-                        <div className='thumb-image-container'>
+                        <div className='thumb-image-container' style={{ backgroundColor: bgColors[index % bgColors.length] }}>
                             <img src={img.src} alt={`Miniatura ${index + 1}`} />
                         </div>
                     </SwiperSlide>
