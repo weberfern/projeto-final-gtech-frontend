@@ -66,4 +66,16 @@
     .related-products .product-listing>*:nth-child(n+3) {
         display: none;
     }
+
+    /* Tira o espaço fantasma entre a última vitrine e o Footer */
+    .related-products {
+        margin-bottom: 0 !important;
+        padding-bottom: 70px;
+        /* Devolve apenas um respiro sutil para não colar 100% no rodapé */
+    }
+
+    /* Impede os cartões de multiplicarem a margem no limite inferior da página */
+    .related-products .product-card {
+        margin-bottom: 0 !important;
+    }
 }

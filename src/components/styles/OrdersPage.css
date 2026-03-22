@@ -1,0 +1,32 @@
+.order-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order-container {
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 20vh;
+}
+
+.order-title {
+    font-size: 32px;
+    color: var(--dark-gray-2);
+    margin-bottom: 15px;
+}
+
+.order-text {
+    color: var(--dark-gray-3);
+}

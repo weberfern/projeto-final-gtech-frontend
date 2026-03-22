@@ -58,8 +58,18 @@ const Gallery = ({ className = "", width = "100%", height = "auto", radius = "0p
                     </div>
 
                     <div className="gallery-image">
-                        <img src={images[currentIndex].src} alt={images[currentIndex].title}
-                            style={{ transform: images[currentIndex].rotate ? `rotate(${images[currentIndex].rotate})` : "none" }} />
+                        {/* Cria todas as fotos de uma vez (para o navegador fazer o download antecipado), mas aplica "display: none" nas que não são a atual para remover o Lag */}
+                        {images.map((img, index) => (
+                            <img
+                                key={index}
+                                src={img.src}
+                                alt={img.title}
+                                style={{
+                                    transform: img.rotate ? `rotate(${img.rotate})` : "none",
+                                    display: index === currentIndex ? 'block' : 'none'
+                                }}
+                            />
+                        ))}
                     </div>
                 </div>
 

@@ -4,6 +4,7 @@ import instagramIcon from '../assets/instagram.svg';
 import twitterIcon from '../assets/twitter.svg';
 import FooterInformation from './FooterInformation';
 import './styles/Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -46,11 +47,11 @@ const Footer = () => {
                         <FooterInformation
                             title="Categorias"
                             informations={[
-                                { text: "Camisetas", link: "/category/shirts" },
-                                { text: "Calças", link: "/category/pants" },
-                                { text: "Bonés", link: "/category/caps" },
-                                { text: "Headphones", link: "/category/headphones" },
-                                { text: "Tênis", link: "/category/shoes" },
+                                { text: "Camisetas", link: "/products", state: { sentCategory: "Camisetas" } },
+                                { text: "Calças", link: "/products", state: { sentCategory: "Calças" } },
+                                { text: "Bonés", link: "/products", state: { sentCategory: "Bonés" } },
+                                { text: "Headphones", link: "/products", state: { sentCategory: "Headphones" } },
+                                { text: "Tênis", link: "/products", state: { sentCategory: "Tênis" } },
                             ]}
                         />
                     </div>

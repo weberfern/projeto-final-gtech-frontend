@@ -1,4 +1,5 @@
 import './styles/FooterInformation.css';
+import { Link } from 'react-router-dom';
 
 const FooterInformation = ({ title, informations }) => {
     return (
@@ -7,7 +8,7 @@ const FooterInformation = ({ title, informations }) => {
             <ul>
                 {informations.map((info, index) => (
                     <li key={index}>
-                        <a href={info.link}>{info.text}</a>
+                        <Link to={info.link} state={info.state}>{info.text}</Link>
                     </li>
                 ))}
             </ul>

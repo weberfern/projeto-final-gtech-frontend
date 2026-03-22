@@ -21,6 +21,12 @@ const ProductListingPage = () => {
     );
     const [isFilterOpen, setIsFilterOpen] = useState(false);
 
+    useEffect(() => {
+        if (location.state && location.state.sentCategory) {
+            setSelectedCategories([location.state.sentCategory]);
+        }
+    }, [location.state]);
+
     /* Impede o scroll da página quando o menu de filtros está aberto */
     useEffect(() => {
         if (isFilterOpen) {
