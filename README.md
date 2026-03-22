@@ -5,15 +5,15 @@ Trata-se de um e-commerce, focado em uma experiência de usuário moderna e resp
 
 ## 👥 Autores
 
-**WeberFern**
+**Weber Fernandes**
 - GitHub: [weberfern](https://github.com/weberfern)
 - Email: [weber12@gmail.com]
 
-**Sandra**
+**Sandra Vasconcelos**
 - GitHub: [SandraVasconcelos-74](https://github.com/SandraVasconcelos-74)
 - Email: [sandrajulala@gmail.com]
 
-**Assis**
+**Assis Sousa**
 - GitHub: [assissousa](https://github.com/assissousa)
 - Email: [assispsousa@gmail.com]
 
