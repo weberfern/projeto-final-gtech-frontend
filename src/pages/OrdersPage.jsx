@@ -6,7 +6,10 @@ const OrdersPage = () => {
     return (
         <Layout>
             <div className='order-container'>
-                <h2 className='order-title'>Meus Pedidos</h2>
+                <div className='orders-header'>
+                    <h2 className='order-title'>Meus Pedidos</h2>
+                    <div className='orders-line'></div>
+                </div>
                 <p className='order-text'>Nenhum pedido foi encontrado em sua conta no momento.</p>
             </div>
             <div className='order-btn-container'>
