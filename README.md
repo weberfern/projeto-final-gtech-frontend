@@ -1,7 +1,10 @@
-# Projeto Drip Store - Frontend 👟👕
+# Projeto Final Geração Tech 3.0 - Frontend 👟👕
 
 Este projeto foi desenvolvido como parte do **Bootcamp Geração Tech 3.0** da Digital College.
 Trata-se de um e-commerce, focado em uma experiência de usuário moderna e responsiva.
+
+> [!NOTE]
+> Acesse o projeto clicando Aqui [https://drip-store-weberfern.vercel.app/](https://drip-store-weberfern.vercel.app/)
 
 ## 👥 Autores
 
@@ -47,7 +50,7 @@ git clone https://github.com/weberfern/projeto-final-gtech-frontend.git
 
 2. Instale as dependências:
 ```bash
-cd Projeto-Final-GTech
+cd drip-store
 npm install
 ```
 
