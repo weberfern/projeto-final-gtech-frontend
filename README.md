@@ -106,4 +106,4 @@ Abaixo, um mosaico das visões otimizadas para celulares, dispostas em ordem (Ho
 
 ---
 
-Desenvolvido durante o Bootcamp Geração Tech 3.0 (Digital College).
+<p align="center">Desenvolvido durante o Bootcamp Geração Tech 3.0 (Digital College).</p>
