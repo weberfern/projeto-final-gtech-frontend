@@ -4,7 +4,7 @@ Este projeto foi desenvolvido como parte do **Bootcamp Geração Tech 3.0** da D
 Trata-se de um e-commerce, focado em uma experiência de usuário moderna e responsiva.
 
 > [!NOTE]
-> Acesse o projeto clicando Aqui [https://drip-store-weberfern.vercel.app/](https://drip-store-weberfern.vercel.app/)
+> Acesse o projeto: [https://projeto-final-gtech-frontend.vercel.app/](https://projeto-final-gtech-frontend.vercel.app/)
 
 ## 👥 Autores
 
