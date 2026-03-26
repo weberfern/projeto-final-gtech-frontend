@@ -1,4 +1,4 @@
-# Projeto Final Geração Tech 3.0 - Frontend 👟👕
+# 🛒 Projeto Final Geração Tech 3.0 - Frontend 👟👕
 
 Este projeto foi desenvolvido como parte do **Bootcamp Geração Tech 3.0** da Digital College.
 Trata-se de um e-commerce, focado em uma experiência de usuário moderna e responsiva.
