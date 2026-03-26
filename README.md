@@ -103,3 +103,7 @@ Abaixo, um mosaico das visões otimizadas para celulares, dispostas em ordem (Ho
   <img src="src/assets/template-for-preview-13.png" width="31%" title="Acesso à Galeria Mobile" />
   <img src="src/assets/template-for-preview-15.png" width="31%" title="Filtro Modular em Drawer" />
 </p>
+
+---
+
+Desenvolvido durante o Bootcamp Geração Tech 3.0 (Digital College).
